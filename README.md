@@ -36,22 +36,27 @@ To Edit the README:
     Which of the following is NOT a valid way to create an instance of Chair? And why does this option not work?  
     A. `var bench = new Chair(24, true);`  
     B. `Chair bench = new Chair(24, true);`  
-    C. `var bench = new(24, true);`  
+    C. `var bench = new(24, true);`  <---- This is not a valid option, as it has no way of linking this instance to 'Chair', it is just floating around by itself with an invalid reference. // ANSWER
     D. `Chair bench = new(24, true);`  
     
     
 2. Imagine you are interviewing for your first job.  The interviewer asks "What can you tell me about OOP?".  Write your response below:
 
+  ANSWER: "OOP stands for object-oriented programming, it organizes code into objects, which are different representations of classes. Objects represent actual items and have attributes, and methods to actually do something with those attributes. They make it much easier to manage your code, as every part of it is contained within these packages for you to modify or use later. They can contain these fixed parts to them, which allow you to reuse them easily and indefinitely. They also have a lot more structure to them, making everything look better and more legible."
 
-3. What is Automated Testing?
+4. What is Automated Testing?
 
+ANSWER: Automated testing is testing code before it is put into production, as in before putting it into the already working and functional structure of a written program. You can make sure it works and passes these functionality tests, before implementing it and potentially breaking other code that is in use.
 
-4. What are some benefits of creating tests for our projects?
+5. What are some benefits of creating tests for our projects?
 
+ANSWER: The benefits would be: being able to see if the code is functional, before putting it into the program that we intend to. If you can check for its functionality, you can make sure it's ready to go, before making sure the program is ready to accept it. If bad code was implemented into a program that was in use, like at a company, it could potentially break and crash the entire application for all its users, and downtime is bad for business. Even if the code is good, there may be steps that need to be taken to make it mesh with the existing code, and therefore its in your best interests to check it, make sure its good, and then sort everything else out.
 
-5. When you create a test project, you do not immediately have access to the class(es) in the project that you are testing.  What do you need to do in order to have access to those classes?
+6. When you create a test project, you do not immediately have access to the class(es) in the project that you are testing.  What do you need to do in order to have access to those classes?
 
-6. Take a look at the class below.  Write out the **names** of each test you would write to verify that this class is working. You do not need to write the whole test, just what you would **name** the test methods. Ex: `IsCreatedWithTwoArguments()`
+ANSWER: You need to add a project reference, so that the testing file knows what it is supposed to be testing.
+
+7. Take a look at the class below.  Write out the **names** of each test you would write to verify that this class is working. You do not need to write the whole test, just what you would **name** the test methods. Ex: `IsCreatedWithTwoArguments()`
 ```c#
     public class Vehicle
     {
@@ -84,7 +89,15 @@ To Edit the README:
     }
 ```
 
+ANSWER: 
 
+The test for ensuring that it is a vehicle that has wheels, color, and mileage may be named "IsAVehicle".
+
+The test for ensuring that the string works properly is "DescriptionOfTheVehicle".
+
+The test for making sure miles are added to the count for the vehicle would be "AddingMilesByDriving".
+
+The test for changing the color of the vehicle is "AddingNewPaintColor".
 
 ## Exercise (8 Points Possible)
 In Visual Studio, clone your forked repository.  
