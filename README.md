@@ -91,13 +91,13 @@ ANSWER: You need to add a project reference, so that the testing file knows what
 
 ANSWER: 
 
-The test for ensuring that it is a vehicle that has wheels, color, and mileage may be named "IsAVehicle".
+The test for ensuring that it is a vehicle that has wheels, color, and mileage may be named: "Vehicle.HasCorrectProperties()"
 
-The test for ensuring that the string works properly is "DescriptionOfTheVehicle".
+The test for ensuring that the string works properly is: "Summary_ReturnsInfoAboutVehicle()"
 
-The test for making sure miles are added to the count for the vehicle would be "AddingMilesByDriving".
+The test for making sure miles are added to the count for the vehicle would be: "Drive_AddsMilesToVehicle()"
 
-The test for changing the color of the vehicle is "AddingNewPaintColor".
+The test for changing the color of the vehicle is: "Paint_ChangesColorOfVehicle()"
 
 ## Exercise (8 Points Possible)
 In Visual Studio, clone your forked repository.  
